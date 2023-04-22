@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+   .photo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    height:100px;
+    width: 400px;
+   }
+   .title{
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+    background-color: blueviolet;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .img{
+    display: flex;
+   }
+   .img img{
+    height: 100px;
+    width: 300px;
+   }
