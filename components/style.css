@@ -2,32 +2,109 @@
     margin: 0px;
     padding: 0px;
 }
-.logo img{
+ img{
     height: 50px;
     width: 50px;
-    border: 2px solid black;
-    border-radius: 50px;
+    border: 1px  white;
+    border-radius: 15px;
 }
-
-   .photo{
-    display: flex;
-    flex-direction: row;
+.c{
+    display:flex;
     flex-wrap: wrap;
-    margin: 5px;
-    height:100px;
+    border: 1px  black;
+    height:880PX;
+    width: 100%;
+
+}
+.box{
+    margin: 15px;
+    padding: 5px;
+    height:40px;
+    width: 400px;
+    cursor: pointer;
+}
+.innerbox {
+    padding: 10px;
+    cursor:pointer;
+}
+.innerbox:hover{
+    background-color: skyblue;
+}
+.title{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 2px dotted blue;
+    background-color: blueviolet;
+    color: white;
+    cursor:pointer;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    border: 1px dotted blue;
+    background-color: yellow;
+   height: fit-content;
+   width: fit-content;    
+}
+.author{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    color: red;
+}
+.rating{
+    display: flex;
+    justify-content:flex-start;
+    position: relative;
+    bottom: 35px;
+    color:red;
+}
+ .img{
+    display: flex;
+   }
+   .img img{
+    height: 150px;
     width: 400px;
    }
-   .title{
+   .footer{
     display: flex;
+    justify-content:center;
     align-items: center;
     border: 1px solid blue;
     background-color: blueviolet;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   }
-   .img{
+}
+button{
+    border:1px solid black;
+    padding: 5px;
+    border-radius:5px;
+}
+a{
+    text-decoration: none;
+}
+nav{
     display: flex;
-   }
-   .img img{
-    height: 100px;
-    width: 300px;
-   }
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+li{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border: 1px solid purple;
+    padding: 10px;
+    height: fit-content;
+    width: 100px;
+    background-color: violet;
+    color: bisque;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+li:hover{
+    background-color: red;
+}

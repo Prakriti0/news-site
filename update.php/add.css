@@ -1,0 +1,67 @@
+body{
+  background-image:url(https://www.vskills.in/certification/blog/wp-content/uploads/2015/01/structure-of-a-news-report.jpg);
+}
+.f{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:50px;
+    color: black;
+}
+form{
+    border: 1px double dodgerblue;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    width: 30%;
+    height: fit-content;
+}
+input{
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    width: 90%;
+   
+}
+input:hover{
+    cursor: pointer;
+    background-color:lightcoral;
+    color: white;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 20px;
+}
+.b{
+    display: flex;
+    justify-content:center;
+
+}
+button{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color:skyblue;
+}
+button:hover{
+    background-color:red;
+    color: white;
+}
+ h1{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    background:linear-gradient(to right ,blue,skyblue);
+    color: black;
+    font-family: cursive;
+ }  

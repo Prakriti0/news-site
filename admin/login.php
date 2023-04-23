@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (isset($_SESSION['logedin'])==1){
+    header('location:hidden.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +14,14 @@
     <link href="../admin/form.css" rel="stylesheet">
 </head>
 <body>
-   <div class="red">
-   <h1>NEWS</h1>
-   </div> <br>
+<div class="rp">
+  <img src="https://live.staticflickr.com/8505/8490246472_e336c463c5.jpg" height="300px" width="250px">
+</div>
    <form method="post" action="./loginprocess.php">
-   <h2>&#9786;sign in</h2> <br>
+   <div class="p">
+   <h1>Login Form</h1>
+   </div>
+   <h2>&#9786;sign in</h2>
    <div class="list">
     <label ><b>USERNAME:</b> </label>
     <input type="text"  name="username" placeholder="Enter username">
@@ -21,10 +30,11 @@
     <label><b>PASSWORD: </b></label>
 <input type="password"  name="password" placeholder="Enter the password">
    </div>
-   <div class="button">
-   <div class="reg"><button><a href="../admin/register.php " > <b>Register</b></a></button></div>
-<div class="log"><button type="submit">Log In</button></div>
-   </div>
+ <div class="button">
+<button type="submit">Login</button>
+</div>
+<p>OR</p>
+<div class="reg"><a href="./register.php"><b>Register</b></a></div>
    </form> 
 </body>
 </html>

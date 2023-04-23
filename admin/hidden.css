@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgray;
+}
+.h{
+   display: flex;
+   justify-content: space-evenly; 
+   position: relative;
+   top:40px;
+}
+.h button:hover{
+    background-color: red;
+}
+.l{
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    top:80px;
+}
+.l button,.h button{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+}
+.l button:hover{
+    background-color: red;
+}
+.l button a{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    color: blue;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    border: 2px red;
+    padding: 20px;
+    background-color:gray;
+
+}

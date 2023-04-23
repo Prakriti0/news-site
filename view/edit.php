@@ -16,21 +16,20 @@
     if ($conn->connect_error){
         die("connection failed");
     }
+    $id=$_GET['id'];
     $title = $_GET['title'];
     $newsurl = $_GET['newsurl'];
-    $desc= $_GET['desc'];
+    $desc= $_GET['description'];
     $author= $_GET['author'];
     $rating= $_GET['rating'];
-    $sql="INSERT INTO header(id,title,newsurl,description,author,rating)VALUES(null,'$title','$newsurl','$desc','$author',$rating)";
+    $sql="UPDATE header SET title='$title',newsurl='$newsurl',description='$desc',author='$author',rating=$rating where id=$id";
     $result = $conn->query($sql);
     if($result === TRUE){
-        header("Location:./../admin/hidden.php");
+        header("Location:./../index.php");
     }
     else{
         echo ("could not insert");
     }
     ?>
-</body>
-</html>
 </body>
 </html>

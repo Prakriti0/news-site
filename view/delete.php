@@ -16,21 +16,17 @@
     if ($conn->connect_error){
         die("connection failed");
     }
-    $title = $_GET['title'];
-    $newsurl = $_GET['newsurl'];
-    $desc= $_GET['desc'];
-    $author= $_GET['author'];
-    $rating= $_GET['rating'];
-    $sql="INSERT INTO header(id,title,newsurl,description,author,rating)VALUES(null,'$title','$newsurl','$desc','$author',$rating)";
-    $result = $conn->query($sql);
-    if($result === TRUE){
+    $id = $_GET['id'];
+    $sql = "DELETE FROM header where id = $id";
+    $res = $conn->query($sql);
+    if($res === TRUE){
+        echo("deleted successfully");
         header("Location:./../admin/hidden.php");
     }
     else{
-        echo ("could not insert");
+        echo ("cannot delete");
     }
+
     ?>
-</body>
-</html>
 </body>
 </html>
